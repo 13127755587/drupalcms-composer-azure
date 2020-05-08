@@ -266,7 +266,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'j-aHdKvE53wuoQFwBuijrmwqR0D3KsCVYMJjCqpgX7khSqRWSXlXnmcsb0MNOQrqOMS3ZH9X2A';
 
 /**
  * Deployment identifier.
@@ -755,3 +755,14 @@ $settings['entity_update_backup'] = TRUE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+$databases['default']['default'] = array (
+  'database' => 'drupal_site1',
+  'username' => 'root',
+  'password' => 'root',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['config_sync_directory'] = 'sites/site1.jerytest.com/files/config_2bPO1VnMxXL1V66NMErAxXjl5HMMi-1NGS27KT7xBKodAarcR4y-Dc1xjK_giJt8FFLFsnZz0Q/sync';

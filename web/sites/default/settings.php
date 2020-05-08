@@ -88,16 +88,16 @@
  * ];
  * @endcode
  */
-$databases['default']['default'] = array (
-  'database' => 'drupal',
-  'username' => 'root',
-  'password' => 'root',
-  'prefix' => '',
-  'host' => '127.0.0.1',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-  );
+// $databases['default']['default'] = array (
+//   'database' => 'drupal',
+//   'username' => 'root',
+//   'password' => 'root',
+//   'prefix' => '',
+//   'host' => '127.0.0.1',
+//   'port' => '3306',
+//   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+//   'driver' => 'mysql',
+//   );
 
 /**
  * Customizing database settings.
@@ -275,7 +275,7 @@ $databases['default']['default'] = array (
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'rvnhyxCKOoLr1eUPyLlMoFh3h5oXYnacTAcXBpL2SnaC6v253ayGE18K44s0hLFFjMWcKtcnSQ';
 
 /**
  * Deployment identifier.
@@ -764,3 +764,14 @@ $settings['entity_update_backup'] = TRUE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+$databases['default']['default'] = array (
+  'database' => 'drupal',
+  'username' => 'root',
+  'password' => 'root',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['config_sync_directory'] = 'sites/default/files/config_hF6vUJrTtlPrliq3buQ_hDi3V4CHFaBNDJT-Ib5j7cFt7DwAkEF-QR5ee3LaKC4jssjTOTcBBQ/sync';

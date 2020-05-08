@@ -55,4 +55,4 @@
  * @see \Drupal\Core\DrupalKernel::getSitePath()
  * @see https://www.drupal.org/documentation/install/multi-site
  */
-$sites['9000.localhost.site1'] = 'site1.com';
+$sites['81.site1.jerytest.com'] = 'site1.jerytest.com';
